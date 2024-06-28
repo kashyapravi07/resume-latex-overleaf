@@ -1,0 +1,276 @@
+%-------------------------
+% Resume in Latex
+% Author : Ravi
+% Based off of: https://github.com/EricLiclair/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\graphicspath{ {./images/} }
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\setlength{\footskip}{4.08003pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+% \begin{left}
+    % \begin{wrapfigure}{r}{0.2\textwidth}
+    %     {\vspace*{-0.07\textwidth}\includegraphics[width=0.2\textwidth]{images/logo.png}}
+    % \end{wrapfigure}
+    {\Huge \scshape Ravi Shankar Jha} \\ \vspace{1pt}
+    Bangalore, Karnataka, 560107 \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ +91 6206057803 ~ \href{mailto:ravikashyapwwe20@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{ravikashyapwwe20@gmail.com}} ~
+    \href{https://www.linkedin.com/in/ravi-shankar-jha-2a08941ba/}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin}}  ~
+    \href{https://github.com/kashyapravi07}{\raisebox{-0.2\height}\faGithub\ \underline{github}}\
+    
+    \vspace{-8pt}
+% \end{left}
+
+% \begin{wrapfigure}{r}{0.4\linewidth}
+%     \includegraphics[width=\linewidth]{images/profile.png}
+% \end{wrapfigure}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Acharya Institute of Technology}{Dec. 2021 -- Present}
+      {Bachelor of Engineering (B.E) \textbf{Computer Science and Engineering} (CGPA 8.6)}{Bangalore, Karnataka}
+  \resumeSubHeadingListEnd
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Higher Secondary Education}{2018 -- 2020}
+      {Class XII \textbf{PCM} (Aggregate:80\% )}{Patna, Bihar}
+  \resumeSubHeadingListEnd
+
+%------RELEVANT COURSEWORK-------
+% \section{Relevant Coursework}
+%     %\resumeSubHeadingListStart
+%         \begin{multicols}{4}
+%             \begin{itemize}[itemsep=-5pt, parsep=3pt]
+%                 \item\small Data Structures
+%                 \item Algorithms Analysis
+%                 \item Advanced Algorithms
+%             \end{itemize}
+%         \end{multicols}
+%         \vspace*{2.0\multicolsep}
+    %\resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {AI and Cloud Intern}{Nov 2023 -- Dec 2023}
+      {\href{https://edunetfoundation.org/}{Edunet}}{Remote}
+      \resumeItemListStart
+        \resumeItem{During my internship focused on AI and cloud technologies, I had the opportunity to delve into the intricacies of artificial intelligence and cloud computing.}
+        \resumeItem{I gained hands-on experience with machine learning algorithms, data analysis, and model training.}
+      \resumeItemListEnd
+      \resumeSubHeadingListEnd
+      
+    
+\vspace{-8pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+      {\href{https://github.com/kashyapravi07/Student-Management-System}{{\raisebox{0.0\height}\faLink\ {\textbf{Student Management System}}}} $|$ \emph{Html,Css,JavaScript,Sql,PHP}}{Apr 2024}
+      \resumeItemListStart
+        \resumeItem{Designed and developed a comprehensive student management system using HTML, CSS, JavaScript, and PHP.}
+        \resumeItem{Created a user-friendly interface for administrators, teachers, and students to manage student information and academic records.}
+        \resumeItem{Implemented secure login and authentication features to ensure data privacy and integrity.}
+      \resumeItemListEnd
+     
+      
+     
+
+      
+
+        % \resumeProjectHeading
+        %   {\href{https://github.com/EricLiclair/firebaseChatapp}{\raisebox{0.0\height}\faLink\ {\textbf{Chat App}}} $|$ \emph{Firebase( Auth, Realtime Database, Hosting), React, AntDesign}}{Aug 2021}
+        %   \resumeItemListStart
+        %     \resumeItem{A Web application developed using \textbf{React}, \textbf{AntdDesign} and \textbf{Firebase} with Authentication.}
+        %     \resumeItem{The application provides an interface for users to chat one-to-one, and also provides a list of all users (online and offline) to select from.}
+        %   \resumeItemListEnd
+          \vspace{6pt}
+
+        % \resumeProjectHeading
+        %   {\href{https://github.com/EricLiclair/testapi}{\raisebox{0.0\height}\faLink\ {\textbf{Test API}}} $|$ \emph{Django, Django Rest Framework, drf-yasg, Token Auth, Redoc}}{Jun 2021}
+        %   \resumeItemListStart
+        %     \resumeItem{Developed a concept of API containing the details of the students of institute to be used by the students.}
+        %     \resumeItem{Exposes an \textbf{endpoint to generate token} which can be exchanged over other endpoints of the API to access the students database.}
+        %     \resumeItem{Implemented \textbf{role based authorization} using \textbf{generic and hybrid API Views}.}
+        %   \resumeItemListEnd
+    \resumeSubHeadingListEnd
+\vspace{-16pt}
+%-----------RESEARCH-----------
+\section{Achievements}
+
+    \resumeSubHeadingListStart
+        \resumeSubheading{Academic Performer}{Sem 5}{ Top academic performer in the 5th Semester exams held in the month of Apr 2024}
+
+
+       
+
+        % \resumeSubheading{Google Developer Groups}{Jun 2021 -- Present}{Organizer}{Ranchi}
+        %     \resumeItemListStart
+        %         \resumeItem{Coordinating with the Lead in hosting events for Developers across various Google technologies and products.}
+        %     \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+\vspace{-8pt}
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: C, C++, JavaScript, Sql, Php} \\
+     \textbf{Developer Tools}{: VS Code, Jupyter} \\
+     \textbf{Frameworks/Libraries}{: ReactJS, Django, Pygame} \\
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+
+%-----------INVOLVEMENT---------------
+\section{Leadership / Extracurricular}
+
+    \resumeSubHeadingListStart
+        \resumeSubheading{Lead}{Dec 2023}{Hackathon}{AIT}
+            \resumeItemListStart
+            \vspace{4pt}
+                \resumeItem{Successfully conducted a \textbf{Hackathon} for 3rd and 5th sem students of Dept. of CSE.}
+            \resumeItemListEnd
+            \vspace{5pt}
+            
+        \resumeSubheading{Core Member}{May 2024 -- Present}{Acharya Premier League(APL)}{AIT}
+            \resumeItemListStart
+            \vspace{4pt}
+                \resumeItem{\textbf{Played} an important role in the smooth conduct of this league.}
+                
+            \resumeItemListEnd
+            \vspace{5pt}
+
+        \resumeSubheading{Organizer}{May 2024 }{Inter department Sports Meet}{AIT}
+            \resumeItemListStart
+            \vspace{4pt}
+                \resumeItem{Coordinated with all the branches and successfully conducted this event.}
+            \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+
+\end{document}
